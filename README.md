@@ -18,4 +18,20 @@ I am a junior data analyst on the marketing analytics team and have been tasked 
 ## Prepare 
 
 ### Data Information 
-The data is located on a public domain [here](https://www.kaggle.com/datasets/arashnic/fitbit)
+The data is located on a public domain [here](https://www.kaggle.com/datasets/arashnic/fitbit). This dataset is made available through Mobius on Kaggle. 
+
+The license is available [here](https://creativecommons.org/publicdomain/zero/1.0/).
+
+This dataset includes data from thirty individuals that were gathered via Amazon Mechanical Turk between 03.12.2016-05.12.2016. These individuals consented to the submission of personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. Individual data can be indetified by the unique session ID that each data has. Different types of Fitbit trackers and individual tracking preferences caused variations between ouputs.
+
+### ROCCC 
+#### Reliable
+This data is reliable as it is complete and accurate. 
+#### Original 
+This is a primary data as the data was collected directly from thirty individuals. 
+#### Comprehensive
+Data is comprehensive since it contains two months worth of data. 
+####  Current
+Data is current as it was collected in 2016.
+#### Cited
+The data is cited and gathered directly from the thirty individuals. 
