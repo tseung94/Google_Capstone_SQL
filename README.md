@@ -1,4 +1,4 @@
-# Google Data Analytics Capstone: Bellabeat Case Study
+# Google Data Analytics Capstone: Bellabeat Case Study Using SQL 
 
 ## Introduction 
 Bellabeat is a high-tech company that has a specialization in producing health-focused smart products. The company has an emphasis in empowering women and marketing itself towards women. It's founder and CEO is Urška Sršen. 
@@ -16,3 +16,6 @@ I am a junior data analyst on the marketing analytics team and have been tasked 
 3. How could these trends help influence Bellabeat marketing strategy?
 
 ## Prepare 
+
+### Data Information 
+The data is located on a public domain [here](https://www.kaggle.com/datasets/arashnic/fitbit)
