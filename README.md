@@ -35,3 +35,10 @@ Data is comprehensive since it contains two months worth of data.
 Data is current as it was collected in 2016.
 #### Cited
 The data is cited and gathered directly from the thirty individuals. 
+
+Out of the available data, I chose "dailyActivity_merged.csv", "sleepDay_merged.csv", and "weightLogInfo_merged.csv" to use for this analysis. 
+
+## Process 
+Before importing the three datasets into Bigquery, I had to change the format of the dates in "sleepDay_merged.csv", and "weightLogInfo_merged.csv" into standard “yyyy-mm-dd" format. 
+
+### Cleaning & Transformation 
