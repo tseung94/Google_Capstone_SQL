@@ -43,3 +43,4 @@ Before importing the three datasets into Bigquery, I had to change the format of
 
 ### Cleaning & Transformation 
 https://github.com/Tayyaba-Abro/Google-Case-Study-Bellabeat-Smart-Device-Usage?tab=readme-ov-file
+https://www.kaggle.com/code/sayantanbagchi/bellabeat-case-study-sql-and-tableau
