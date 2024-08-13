@@ -42,6 +42,4 @@ Out of the available data, I chose "dailyActivity_merged.csv", "sleepDay_merged.
 Before importing the three datasets into Bigquery, I had to change the format of the dates in "sleepDay_merged.csv", and "weightLogInfo_merged.csv" into standard “yyyy-mm-dd" format. 
 
 ### Cleaning & Transformation 
-```
-SELECT count(DISTINCT(Id)) FROM `bellabeat-sql.Bellabeat_data.daily_activity`
-```
+https://github.com/Tayyaba-Abro/Google-Case-Study-Bellabeat-Smart-Device-Usage?tab=readme-ov-file
