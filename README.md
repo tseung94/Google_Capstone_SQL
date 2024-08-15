@@ -24,6 +24,8 @@ The license is available [here](https://creativecommons.org/publicdomain/zero/1.
 
 This dataset includes data from thirty individuals that were gathered via Amazon Mechanical Turk between 03.12.2016-05.12.2016. These individuals consented to the submission of personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. Individual data can be indetified by the unique session ID that each data has. Different types of Fitbit trackers and individual tracking preferences caused variations between ouputs.
 
+Response bias is a legitimate concern as data was gathered from individuals that consented to have their data collected from the Bellabeat app. 
+
 ### ROCCC 
 #### Reliable
 This data is reliable as it is complete and accurate. 
@@ -39,7 +41,18 @@ The data is cited and gathered directly from the thirty individuals.
 Out of the available data, I chose "dailyActivity_merged.csv", "sleepDay_merged.csv", and "weightLogInfo_merged.csv" to use for this analysis. 
 
 ## Process 
-Before importing the three datasets into Bigquery, I had to change the format of the dates in "sleepDay_merged.csv", and "weightLogInfo_merged.csv" into standard “yyyy-mm-dd" format. 
+Before importing the three datasets into Bigquery, I had to change the format of the dates in "sleepDay_merged.csv", and "weightLogInfo_merged.csv" into standard “yyyy-mm-dd" format using Excel format. 
+
+I checked for any duplicate values in "dailyActivity_merged.csv" by checking to see if any Id and ActivityDate have repeated entries.
+
+'''
+SELECT Id, ActivityDate, COUNT(*)
+FROM bellabeat-sql.Bellabeat_data.daily_activity 
+GROUP BY Id, ActivityDate 
+HAVING COUNT(*) > 1
+'''
+
+No results were returned, confirming that there are no duplicated rows in the database. 
 
 ### Cleaning & Transformation 
 https://github.com/Tayyaba-Abro/Google-Case-Study-Bellabeat-Smart-Device-Usage?tab=readme-ov-file
