@@ -45,12 +45,12 @@ Before importing the three datasets into Bigquery, I had to change the format of
 
 I checked for any duplicate values in "dailyActivity_merged.csv" by checking to see if any Id and ActivityDate have repeated entries.
 
-'''
+```
 SELECT Id, ActivityDate, COUNT(*)
 FROM bellabeat-sql.Bellabeat_data.daily_activity 
 GROUP BY Id, ActivityDate 
 HAVING COUNT(*) > 1
-'''
+```
 
 No results were returned, confirming that there are no duplicated rows in the database. 
 
