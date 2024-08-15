@@ -54,6 +54,41 @@ HAVING COUNT(*) > 1
 
 No results were returned, confirming that there are no duplicated rows in the database. 
 
+I checked for duplicated rows in "sleepDay_merged.csv" using the same procedure. 
+
+```
+SELECT Id, SleepDay, COUNT(*)
+FROM bellabeat-sql.Bellabeat_data.daily_sleep
+GROUP BY Id, SleepDay 
+HAVING COUNT(*) > 1
+```
+
+This code returned the values below. 
+
+Id	SleepDay	f0_
+4388161847	2016-05-05	2
+4702921684	2016-05-07	2
+8378563200	2016-04-25	2
+
+Since duplicate rows were confirmed, I ran the code below to remove any duplicated rows. 
+
+```
+CREATE OR REPLACE TABLE bellabeat-sql.Bellabeat_data.daily_sleep
+AS
+SELECT DISTINCT * FROM bellabeat-sql.Bellabeat_data.daily_sleep
+```
+
+Finally, checked for duplicated rows in "weightLogInfo_merged.csv".
+
+```
+SELECT Id, Date, COUNT(*)
+FROM bellabeat-sql.Bellabeat_data.daily_weight
+GROUP BY Id, Date 
+HAVING COUNT(*) > 1
+```
+
+There were no duplicated rows in "weightLogInfo_merged.csv"
+
 ### Cleaning & Transformation 
 https://github.com/Tayyaba-Abro/Google-Case-Study-Bellabeat-Smart-Device-Usage?tab=readme-ov-file
 https://www.kaggle.com/code/sayantanbagchi/bellabeat-case-study-sql-and-tableau
