@@ -65,10 +65,11 @@ HAVING COUNT(*) > 1
 
 This code returned the values below. 
 
-Id	SleepDay	f0_
-4388161847	2016-05-05	2
-4702921684	2016-05-07	2
-8378563200	2016-04-25	2
+| Id	| SleepDay	| f0_ |
+| :---: | :---: | :---: |
+| 4388161847 |	2016-05-05 |	2 |
+| 4702921684 |	2016-05-07 |	2 |
+| 8378563200 |	2016-04-25 |	2 |
 
 Since duplicate rows were confirmed, I ran the code below to remove any duplicated rows. 
 
