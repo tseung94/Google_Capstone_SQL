@@ -17,7 +17,7 @@ Group by day
 
 -- Average Sleep per Day
 SELECT FORMAT_DATE('%A', SleepDay) AS day,
-AVG(TotalMinutesAsleep) AS SleepPerDay,
+AVG(TotalMinutesAsleep) AS AvgSleepPerDay,
 FROM bellabeat-sql.Bellabeat_data.daily_sleep
 GROUP BY day   
 
