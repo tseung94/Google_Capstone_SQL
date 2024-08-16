@@ -15,13 +15,13 @@ AVG(VeryActiveMinutes) as AvgVeryActiveMins,
 From bellabeat-sql.Bellabeat_data.daily_activity 
 Group by day
 
--- Average Sleep per Day
+-- Average Sleep per Day (Mins)
 SELECT FORMAT_DATE('%A', SleepDay) AS day,
-AVG(TotalMinutesAsleep) AS AvgSleepPerDay,
+AVG(TotalMinutesAsleep) AS AvgSleepPerDay(Mins),
 FROM bellabeat-sql.Bellabeat_data.daily_sleep
 GROUP BY day   
 
--- Average Weight (LBs) & BMI Overtime
+-- Average Weight (LBs) & BMI 
 SELECT DATE as Date, 
 AVG(WeightPounds) as AvgWeight(LBs),
 AVG(BMI) as AverageBMI, 
