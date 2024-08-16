@@ -90,6 +90,20 @@ HAVING COUNT(*) > 1
 
 There were no duplicated rows in "weightLogInfo_merged.csv"
 
-### Cleaning & Transformation 
+### Data Transformation/Manipulation
+
+"dailyActivity_merged.csv" was manipulated to show the average distance/calories/steps per day. 
+
+```
+SELECT FORMAT_DATE('%A', ActivityDate) AS day,
+AVG(TotalDistance) AS AvgDistancePerDay,
+AVG(Calories) AS AvgCaloriesPerDay, 
+AVG(TotalSteps) as AvgStepsPerDay,
+FROM bellabeat-sql.Bellabeat_data.daily_activity 
+GROUP BY day  
+```
+
+![Screenshot 2024-08-16 132208](https://github.com/user-attachments/assets/791ad7ec-bb4d-4b2d-a09d-8e3a611b1f44)
+
 https://github.com/Tayyaba-Abro/Google-Case-Study-Bellabeat-Smart-Device-Usage?tab=readme-ov-file
 https://www.kaggle.com/code/sayantanbagchi/bellabeat-case-study-sql-and-tableau
