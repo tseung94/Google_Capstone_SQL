@@ -92,7 +92,7 @@ There were no duplicated rows in "weightLogInfo_merged.csv"
 
 ### Data Transformation/Manipulation
 
-"dailyActivity_merged.csv" was manipulated to show the average distance/calories/steps per day. 
+1. "dailyActivity_merged.csv" was manipulated to show the average distance/calories/steps per day. 
 
 ```
 SELECT FORMAT_DATE('%A', ActivityDate) AS day,
@@ -104,6 +104,32 @@ GROUP BY day
 ```
 
 ![Screenshot 2024-08-16 132208](https://github.com/user-attachments/assets/791ad7ec-bb4d-4b2d-a09d-8e3a611b1f44)
+
+2. "dailyActivity_merged.csv" was manipulated to show types of activity by ID
+   
+```
+SELECT FORMAT_DATE('%A', ActivityDate) AS day,
+AVG(SedentaryMinutes) as AvgSedMins,
+AVG(LightlyActiveMinutes) as AvgLightActiveMins,
+AVG(FairlyActiveMinutes) as AvgFairActiveMins, 
+AVG(VeryActiveMinutes) as AvgVeryActiveMins,
+From bellabeat-sql.Bellabeat_data.daily_activity 
+Group by day
+```
+
+![image](https://github.com/user-attachments/assets/1d5f236f-b466-4cf3-90ee-c8f89be15bec)
+
+3. "sleepDay_merged.csv" was manipulated to show average sleep per day
+
+```
+SELECT FORMAT_DATE('%A', SleepDay) AS day,
+AVG(TotalMinutesAsleep) AS AvgSleepPerDay,
+FROM bellabeat-sql.Bellabeat_data.daily_sleep
+GROUP BY day 
+```
+
+![image](https://github.com/user-attachments/assets/11e7f9ac-5821-4d02-aaa7-0037fbf08b45)
+
 
 https://github.com/Tayyaba-Abro/Google-Case-Study-Bellabeat-Smart-Device-Usage?tab=readme-ov-file
 https://www.kaggle.com/code/sayantanbagchi/bellabeat-case-study-sql-and-tableau
