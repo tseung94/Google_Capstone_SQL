@@ -90,7 +90,7 @@ HAVING COUNT(*) > 1
 
 There were no duplicated rows in "weightLogInfo_merged.csv"
 
-### Data Transformation/Manipulation
+## Analyze & Share
 
 1. "dailyActivity_merged.csv" was manipulated to show the average distance/calories/steps per day. 
 
@@ -104,6 +104,10 @@ GROUP BY day
 ```
 
 ![Screenshot 2024-08-16 132208](https://github.com/user-attachments/assets/791ad7ec-bb4d-4b2d-a09d-8e3a611b1f44)
+
+![image](https://github.com/user-attachments/assets/33713023-b748-4d83-ac17-f01138201335)
+
+As shown by the analysis, there is a significant increase in steps, calories, and distances per day (hereby referred to as "categories") on Tuesdays and Saturdays. There is a noticeable positive correlation in all categories on Sunday and Monday, which peaks on Tuesday. After Tuesday, there is a steady decline of the categories until Thursday, in which there is incline that peaks off on Saturday. Sunday is the least amount of average steps and distances individuals accomplished. For average calories, that day falls on Thursday. Overall, as expected, the graphs of all categories have similar trends throughout the week. 
 
 2. "dailyActivity_merged.csv" was manipulated to show types of activity by ID
    
@@ -142,6 +146,9 @@ ORDER BY Date
 ```
 
 ![image](https://github.com/user-attachments/assets/7bc5426f-55e0-40b3-9394-b966a9431924)
+
+## Act 
+
 
 
 https://github.com/Tayyaba-Abro/Google-Case-Study-Bellabeat-Smart-Device-Usage?tab=readme-ov-file
