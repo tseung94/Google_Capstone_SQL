@@ -169,6 +169,8 @@ Despite fluctuations, the overall BMI and weight average of all users stayed rel
 
 ## Share
 
+![image](https://github.com/user-attachments/assets/f75084d7-5050-4e7e-b5ff-e916249bb3dd)
+
 [Tableau](https://public.tableau.com/views/BellabeatSQL/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Act 
