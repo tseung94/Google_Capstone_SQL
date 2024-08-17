@@ -25,6 +25,6 @@ GROUP BY day
 SELECT DATE as Date, 
 AVG(WeightPounds) as AvgWeightLBs,
 AVG(BMI) as AverageBMI, 
-FROM bellabeat-sql.Bellabeat_data.daily_weight1
+FROM bellabeat-sql.Bellabeat_data.daily_weight
 GROUP BY Date
 ORDER BY Date
