@@ -90,7 +90,7 @@ HAVING COUNT(*) > 1
 
 There were no duplicated rows in "weightLogInfo_merged.csv"
 
-## Analyze & Share
+## Analyze 
 
 1. "dailyActivity_merged.csv" was manipulated to show the average distance/calories/steps per day. 
 
@@ -105,9 +105,9 @@ GROUP BY day
 
 ![Screenshot 2024-08-16 132208](https://github.com/user-attachments/assets/791ad7ec-bb4d-4b2d-a09d-8e3a611b1f44)
 
-![image](https://github.com/user-attachments/assets/33713023-b748-4d83-ac17-f01138201335)
+![image](https://github.com/user-attachments/assets/1910adcf-6e38-4aef-a307-8b874348458c)
 
-As shown by the analysis, there is a significant increase in steps, calories, and distances per day (hereby referred to as "categories") on Tuesdays and Saturdays. There is a noticeable positive correlation in all categories on Sunday and Monday, which peaks on Tuesday. After Tuesday, there is a steady decline of the categories until Thursday, in which there is incline that peaks off on Saturday. Sunday is the least amount of average steps and distances individuals accomplished. For average calories, that day falls on Thursday. Overall, as expected, the graphs of all categories have similar trends throughout the week. 
+As shown by the analysis, there is a significant increase in steps, calories, and distances per day (hereby referred to as "categories") on Tuesdays and Saturdays. There is a noticeable positive trend in all categories on Sunday and Monday, which peaks on Tuesday. After Tuesday, there is a steady decline of the categories until Thursday, in which there is an incline that peaks off on Saturday. Sunday is the least amount of average steps and distances individuals accomplished. For average calories, that day falls on Thursday. Overall, as expected, the graphs of all categories have similar trends throughout the week. 
 
 2. "dailyActivity_merged.csv" was manipulated to show types of activity by ID
    
@@ -122,6 +122,16 @@ Group by day
 ```
 
 ![image](https://github.com/user-attachments/assets/1d5f236f-b466-4cf3-90ee-c8f89be15bec)
+
+![image](https://github.com/user-attachments/assets/5f9e1596-f3d9-40cd-954b-df3a521fc5cf)
+
+This graph is not ideal to show patterns of behavior throughout the week as the line graphs are too close together for clear analysis. Also, the data is misrepresented due to the fact that the active minutes are separated into different categories. This falsely makes it seem like the daily active minutes are low and that most individuals spend their days being sedentary. To better represent the data, I went ahead and combined the average light active minutes, average very active minutes, and average fair active minutes all into one average active minute variable. 
+
+![image](https://github.com/user-attachments/assets/5d5b1ab5-8d1c-4640-9e1c-a243c4c45341)
+
+The cleaned version of the line graph shows that most users are most active during Sundays, while steadily declining in activity until Wednesday. Then, there is a sudden increase in active minutes on Thursday, continuning the high activity until Friday. There is a small dip in activity on Saturday.
+
+As of the sedentary minutes, most users are most sedentary on Mondays. They become least sedentary on Sundays and Tuesdays. From Tuesday to Saturday, the amount of sedentary minutes levels off. 
 
 3. "sleepDay_merged.csv" was manipulated to show average sleep per day
 
