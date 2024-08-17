@@ -144,18 +144,28 @@ GROUP BY day
 
 ![image](https://github.com/user-attachments/assets/953b3f8b-ea9d-4750-8341-d9f3b1b01778)
 
+![image](https://github.com/user-attachments/assets/ba750f6f-e891-4673-93b2-b28024acbf0d)
+
+Users sleep the most amount of time on average on Sundays and Wednesdays. They sleep the least amount of time on Tuesdays, Thursdays, and Fridays. They sleep an average amount of time on Mondays and Saturdays compared to the rest of the week. 
+
 4. "weightLogInfo_merged.csv" was manipulated to show average weight (LBs) & BMI
 
 ```
 SELECT DATE as Date, 
 AVG(WeightPounds) as AvgWeightLBs,
 AVG(BMI) as AverageBMI, 
-FROM bellabeat-sql.Bellabeat_data.daily_weight
+FROM bellabeat-sql.Bellabeat_data.daily_weight1
 GROUP BY Date
 ORDER BY Date
 ```
 
 ![image](https://github.com/user-attachments/assets/7bc5426f-55e0-40b3-9394-b966a9431924)
+
+![image](https://github.com/user-attachments/assets/ae3f252f-ef3e-433c-8ca2-795df8ce9797)
+
+Despite fluctuations, the overall BMI and weight average of all users stayed relatively the same. However, there is a noticeable spike on 4/13/16, which is caused by an outlier. I have removed this outlier on a new graph to better represent the data. 
+
+
 
 ## Act 
 
