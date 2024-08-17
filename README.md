@@ -169,7 +169,7 @@ Despite fluctuations, the overall BMI and weight average of all users stayed rel
 
 ## Share
 
-[Tableau]([https://www.kaggle.com/datasets/arashnic/fitbit](https://public.tableau.com/views/BellabeatSQL/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
+[Tableau](https://public.tableau.com/views/BellabeatSQL/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Act 
 
