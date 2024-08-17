@@ -154,7 +154,7 @@ Users sleep the most amount of time on average on Sundays and Wednesdays. They s
 SELECT DATE as Date, 
 AVG(WeightPounds) as AvgWeightLBs,
 AVG(BMI) as AverageBMI, 
-FROM bellabeat-sql.Bellabeat_data.daily_weight1
+FROM bellabeat-sql.Bellabeat_data.daily_weight
 GROUP BY Date
 ORDER BY Date
 ```
@@ -165,7 +165,11 @@ ORDER BY Date
 
 Despite fluctuations, the overall BMI and weight average of all users stayed relatively the same. However, there is a noticeable spike on 4/13/16, which is caused by an outlier. I have removed this outlier on a new graph to better represent the data. 
 
+![image](https://github.com/user-attachments/assets/04e1704e-060e-4456-ba5a-4d6e9dc7c1fa)
 
+## Share
+
+[Tableau]([https://www.kaggle.com/datasets/arashnic/fitbit](https://public.tableau.com/views/BellabeatSQL/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))
 
 ## Act 
 
