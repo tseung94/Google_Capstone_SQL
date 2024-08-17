@@ -6,7 +6,7 @@ AVG(TotalSteps) as AvgStepsPerDay,
 FROM bellabeat-sql.Bellabeat_data.daily_activity 
 GROUP BY day      
 
--- Types of Activity by ID         
+-- Types of Activity by Day         
 SELECT FORMAT_DATE('%A', ActivityDate) AS day,
 AVG(SedentaryMinutes) as AvgSedMins,
 AVG(LightlyActiveMinutes) as AvgLightActiveMins,
@@ -25,6 +25,6 @@ GROUP BY day
 SELECT DATE as Date, 
 AVG(WeightPounds) as AvgWeightLBs,
 AVG(BMI) as AverageBMI, 
-FROM bellabeat-sql.Bellabeat_data.daily_weight
+FROM bellabeat-sql.Bellabeat_data.daily_weight1
 GROUP BY Date
 ORDER BY Date
