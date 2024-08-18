@@ -175,7 +175,11 @@ Despite fluctuations, the overall BMI and weight average of all users stayed rel
 
 ## Act 
 
+1. The Bellabeat application should be expanded to include daily calories intake in order to help users reach their ideal weight. From the data, we can see that users are not actually losing any weight or BMI in the long term. For users that are using this application for weight loss, this can be a huge demotivating factor and may stop using the application all together. A calorie counter that comes with the appliation to log daily meals will increase customer satisfaction and will ensure long term usage from the customer base.
 
+2. Tuesdays and Saturadys are the most active days for Bellabeat users. Although we the sample size is too small to accurately represent the population, we can make the assumption that Tuesdays and Saturdays are when people are most active in general. As a result, we can run marketing campaigns on digital platforms such as Youtube specifically on Tuesdays and Saturdays. The general population will be more inclined to become a Bellabeat user since people will be more motivated to exercise on these days.
 
-https://github.com/Tayyaba-Abro/Google-Case-Study-Bellabeat-Smart-Device-Usage?tab=readme-ov-file
-https://www.kaggle.com/code/sayantanbagchi/bellabeat-case-study-sql-and-tableau
+3. Bellabeat users seem to spend most of their time sedentary. To better combat this, the application can send reminders every set amount of time that the users can choose in order to increase their daily amount of activity and reduce the amount of sendentary minutes. 
+
+4. Bellabeat users struggle to get as much adequate sleep on weekdays compared to weekends. A nightly ritual on the application that prepares the users for bedtime can be implemented to incerase the amount of time users sleep on weekdays. For an example, the application can send a reminder an hour before a set bed time. From then, it can send a reminder every ten minutes, with specific instructions, such as brushing your teeth or turning off the computer or light until the set bed time.  
+
